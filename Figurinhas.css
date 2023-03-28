@@ -1,0 +1,72 @@
+/*DOCUMENTO*/
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: sans-serif;
+	background-color: #128a84;
+
+
+}
+header {
+	background-color: #79af30;
+	height: 250px;
+	padding-top: 25px;
+	color: darkred;
+	text-align: center;
+	border-radius: 10px;
+
+
+}
+
+main {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.box {
+	width: 250px;
+	height: 372px;
+	background-color: #000000;
+	border-radius: 25px;
+	padding: 10px;
+	color: #f4efec;
+	text-align: center;
+	margin: 10px;
+
+}
+
+.box: hover{
+	box-shadow: 6px 6px 10px #a4a4a4;
+
+}
+
+.box h2{margin: 0 0 10px 0;
+	padding: 0;
+
+}
+
+.box figure {width: 250px;
+	height: 200px;
+	background-color: #e6e6e6;
+	border-radius: 25px;
+	margin: 0;
+	padding: 0;
+	border-radius: 10 10 10 10;
+
+}
+
+
+ footer {
+ 	background-color: #79af30;
+ 	height: 40px;
+ 	padding-top: 10px;
+ 	color: #8d00c6;
+ 	text-align: left;
+ }
