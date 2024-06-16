@@ -11,17 +11,18 @@ body {
 }
 header {
 	background-color: #79af30;
-	height: 250px;
-	padding-top: 25px;
+	height: auto;
+	padding-top: 5px;
 	color: darkred;
 	text-align: center;
-	border-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 
 
 }
 
 main {
-	margin: 0;
+	margin-top: 100px;
 	padding: 0;
 	display: flex;
 	justify-content: center;
@@ -30,43 +31,191 @@ main {
 	align-content: center;
 }
 
-.box {
-	width: 250px;
-	height: 372px;
-	background-color: #000000;
-	border-radius: 25px;
+.card {
+	width: 230px;
+	height: 360px;
+	/* border-radius: 5px; */
 	padding: 10px;
-	color: #f4efec;
+	color: black;
 	text-align: center;
 	margin: 10px;
+	border: 10px black ridge ;
+	justify-content: center;
+	align-items: center;
+	
+	
 
 }
 
-.box: hover{
+.card hover{
+	transform: scale(1.05);
 	box-shadow: 6px 6px 10px #a4a4a4;
 
 }
 
-.box h2{margin: 0 0 10px 0;
-	padding: 0;
+.card h3{
+	border: 4px #000000 outset;
+	border-top: 4px aliceblue inset;
+	border-left:4px aliceblue inset ;
+	margin: 0 0 10px 0;
+	padding: 4px;
 
 }
 
-.box figure {width: 250px;
+.card figure {
+	width: 200px;
 	height: 200px;
-	background-color: #e6e6e6;
-	border-radius: 25px;
+	background-color: #e6e6e600;
+	border: 4px rgb(105, 105, 105) ridge;
+	border-radius: 5px;
 	margin: 0;
 	padding: 0;
-	border-radius: 10 10 10 10;
+
 
 }
 
+.desc{
+	height: 90px;
+	font-size: 15px;
+	border: 4px rgb(148, 148, 148) ridge;
+	background-color: #ffffff99;
+	margin: 3px;
+	margin-top: 6px;
+}
+
+.stars{
+	height: 5px;
+}
+.card p{
+	font-size: 12px;
+	justify-content: start;
+	text-align: start;
+	margin-left: 8px;
+	margin-top: 5px;
+	
+}
+
+.img{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h5{
+	margin-left: 2px;
+	margin-right: 2px;
+}
 
  footer {
  	background-color: #79af30;
- 	height: 40px;
+ 
  	padding-top: 10px;
- 	color: #8d00c6;
+ 	color: #6c2b8a;
  	text-align: left;
+	align-items: center;
+	display: flex;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
  }
+
+footer h3{
+	margin-left: 5px;
+	margin-top: 25px;
+	
+}
+
+footer img{
+	margin-left: 15px;
+
+}
+ 
+ /* ESTRELAS  */
+
+ .rating {
+	
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 0.0rem;
+	--stroke: #666;
+	--fill: #ffc73a;
+	
+  }
+  
+  .rating input {
+	appearance: unset;
+  }
+  
+  .rating label {
+	cursor: pointer;
+  }
+  
+  .rating svg {
+	width: 1rem;
+	height: 2rem;
+	overflow: visible;
+	fill: transparent;
+	stroke: var(--stroke);
+	stroke-linejoin: bevel;
+	stroke-dasharray: 12;
+	animation: idle 4s linear infinite;
+	transition: stroke 0.2s, fill 0.5s;
+  }
+  
+  @keyframes idle {
+	from {
+	  stroke-dashoffset: 24;
+	}
+  }
+  
+  .rating label:hover svg {
+	stroke: var(--fill);
+  }
+  
+  .rating input:checked ~ label svg {
+	transition: 0s;
+	animation: idle 4s linear infinite, yippee 0.75s backwards;
+	fill: var(--fill);
+	stroke: var(--fill);
+	stroke-opacity: 0;
+	stroke-dasharray: 0;
+	stroke-linejoin: miter;
+	stroke-width: 8px;
+  }
+  
+  @keyframes yippee {
+	0% {
+	  transform: scale(1);
+	  fill: var(--fill);
+	  fill-opacity: 0;
+	  stroke-opacity: 1;
+	  stroke: var(--stroke);
+	  stroke-dasharray: 10;
+	  stroke-width: 1px;
+	  stroke-linejoin: bevel;
+	}
+  
+	30% {
+	  transform: scale(0);
+	  fill: var(--fill);
+	  fill-opacity: 0;
+	  stroke-opacity: 1;
+	  stroke: var(--stroke);
+	  stroke-dasharray: 10;
+	  stroke-width: 1px;
+	  stroke-linejoin: bevel;
+	}
+  
+	30.1% {
+	  stroke: var(--fill);
+	  stroke-dasharray: 0;
+	  stroke-linejoin: miter;
+	  stroke-width: 8px;
+	}
+  
+	60% {
+	  transform: scale(1.2);
+	  fill: var(--fill);
+	}
+  }
+  
